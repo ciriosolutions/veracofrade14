@@ -58,6 +58,8 @@
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/stylesheet.css \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls/calendario.html \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls/hermandades.html \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls/mapa.html \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls/social.html \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/iconos/icomatic.css \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/iconos/icomatic.eot \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/iconos/icomatic.html \
@@ -71,6 +73,8 @@
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/iconos/js/dat.color.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/iconos/js/dat.gui.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logo.png \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeader mal.png \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeader.png \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/js/index.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/js/jquery-2.1.0.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/plugins/org.apache.cordova.device \
