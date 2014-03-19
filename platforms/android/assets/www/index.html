@@ -7,12 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css" />
 
     <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="phonegap.js"></script>
 
-    <script>
-        $(window).load(function(){
-            $('#Loading').fadeOut(2000);
-        });
-    </script>  
 
     <script>
             function slidePageFrom(page, from, currentPage) {
@@ -31,10 +27,8 @@
         $(document).ready(function() {
             $("#Main").load( "htmls/calendario.html");
             $("#Hermandades").click(function(event){
-                $("#NewSection").addClass("loading");
                 slidePageFrom(NewSection, 'right', Main);
                 $("#NewSection").load("htmls/hermandades.html");
-                $("#NewSection").removeClass("loading");
 
             });
         });
@@ -46,19 +40,23 @@
 <body>
     
         <header>
-          <div class="max-width">
-            <div class="topcoat-navigation-bar">
-              <div class="topcoat-navigation-bar__item center full">
-                <h1 class="topcoat-navigation-bar__title">Vera Cofrade 2014</h1>
+         
+            <div class="topcoat-navigation-bar full" style="position: fixed;">
+              <div class="topcoat-navigation-bar__item full">
+                <h1 class="topcoat-navigation-bar__title">VeraCofrade</h1>
               </div>
+              
+              
+                  
+              
             </div>
-          </div>
+         
         </header>
 
         <div id="Main" class="page center">
         </div>
 
-        <div id="NewSection" class="page right loading">
+        <div id="NewSection" class="page right">
         </div>
 
         <footer>
@@ -66,7 +64,7 @@
             
             <label class="topcoat-tab-bar__item">
               <a href="prueba.html">
-              <input type="radio" name="topcoat">
+              
               <button class="topcoat-tab-bar__button full">
                 <div class="icomatic">location</div>
                 <div class="icon-label">Mapa</div>
@@ -75,8 +73,7 @@
             </label>
 
             <label class="topcoat-tab-bar__item">
-              <!--<a href="javascript:slidePageFrom(page1, 'right');">-->
-              <input type="radio" name="topcoat">
+              
                 <button id="Hermandades" class="topcoat-tab-bar__button full">
                   <div class="icomatic">home</div>
                   <div class="icon-label">Hermandades</div>
@@ -87,7 +84,7 @@
             </label>
             <label class="topcoat-tab-bar__item">
               <a href="calendario.html">
-              <input type="radio" name="topcoat">
+              
               <button class="topcoat-tab-bar__button full">
                 <div class="icomatic">calendar</div>
                 <div class="icon-label">Calendario</div>
@@ -96,7 +93,7 @@
             </label>
 
             <label class="topcoat-tab-bar__item">
-              <input type="radio" name="topcoat">
+              
               <a href="social.html">
                 <button class="topcoat-tab-bar__button full">
                   <div class="icomatic">group</div>
