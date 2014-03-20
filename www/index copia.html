@@ -16,35 +16,17 @@
         // Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation
         page.className ="page transition center";
 
-        currentPage.className = "page transition right";// + (from === "left" ? "right" : "left");
+        currentPage.className = "page transition " + (from === "left" ? "right" : "left");
         }
+
     </script>
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $("#Main").load("htmls/mapa.html");
-
-            $("input[id=RBMapa]").attr('checked', true);
-
-
-            $("#mapa").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/mapa.html");
-            });
-
-            $("#ahcv").click(function(event){
+            $("#Main").load( "htmls/mapa.html");
+            $("#Hermandades").click(function(event){
                 slidePageFrom(NewSection, 'right', Main);
                 $("#NewSection").load("htmls/hermandades.html");
-            });
-
-            $("#calendario").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/calendario.html");
-            });
-
-            $("#social").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/social.html");
             });
         });
     </script> 
@@ -60,7 +42,7 @@
             </div>
 
             <div class="topcoat-navigation-bar__item half right">
-                <img src="img/logoVCHeader.png" style="vertical-align:middle; height:28px;margin-top: -5px;"></img>
+                <img src="img/logoVCHeader.png" style="vertical-align:middle; height:25px;margin-top: -4px;"></img>
             <div>
         </div>
     </header>
@@ -74,32 +56,28 @@
     <footer>
       <div class="topcoat-tab-bar full" style="position: fixed; bottom: 0px;">        
         <label class="topcoat-tab-bar__item">
-            <input type="radio" name="topcoat" id="RBMapa">
-            <button id="mapa" class="topcoat-tab-bar__button full">
+            <button class="topcoat-tab-bar__button full">
                 <div class="icomatic">location</div>
                 <div class="icon-label">Mapa</div>
             </button>
         </label>
 
         <label class="topcoat-tab-bar__item">
-            <input type="radio" name="topcoat" id="RBAHCV">
-            <button id="ahcv" class="topcoat-tab-bar__button full">
+            <button class="topcoat-tab-bar__button full">
                 <div class="icomatic">home</div>
                 <div class="icon-label">AHCV</div>
             </button>
         </label>
 
         <label class="topcoat-tab-bar__item">
-            <input type="radio" name="topcoat" id="RBCalendar">
-            <button id="calendario" class="topcoat-tab-bar__button full">
+            <button class="topcoat-tab-bar__button full">
                 <div class="icomatic">calendar</div>
                 <div class="icon-label">Calendario</div>
             </button>
         </label>
 
         <label class="topcoat-tab-bar__item">
-            <input type="radio" name="topcoat" id="RBSocial">
-            <button id="social" class="topcoat-tab-bar__button full">
+            <button class="topcoat-tab-bar__button full">
                 <div class="icomatic">group</div>
                 <div class="icon-label">Social</div>
             </button>

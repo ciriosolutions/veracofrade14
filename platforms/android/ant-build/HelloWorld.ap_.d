@@ -23,6 +23,7 @@
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/icon.png \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/iconos \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/img \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/index copia.html \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/index.html \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/indexNoFunciona.html \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/js \
@@ -38,6 +39,7 @@
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/css/theme.css \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/css/topcoat-mobile-light.css \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/css/topcoat-mobile-light.min.css \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/Montez-Regular.ttf \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/PoiretOne-Regular.ttf \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/sourcecodepro-regular-webfont.eot \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/sourcecodepro-regular-webfont.svg \
@@ -75,6 +77,7 @@
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logo.png \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeader mal.png \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeader.png \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeaderBlancoPuro.png \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/js/index.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/js/jquery-2.1.0.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/plugins/org.apache.cordova.device \
