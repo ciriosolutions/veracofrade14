@@ -25,25 +25,49 @@
             $("#Main").load("htmls/mapa.html");
 
             $("input[id=RBMapa]").attr('checked', true);
-
+			
             $("#mapa").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/mapa.html");
+				if($("#NewSection").hasClass("right")){
+					slidePageFrom(NewSection, 'right', Main);
+					$("#NewSection").load("htmls/mapa.html");
+				}
+				else if($("#Main").hasClass("right")){
+					slidePageFrom(Main, 'right', NewSection);
+					$("#Main").load("htmls/mapa.html");
+				}
             });
 
             $("#ahcv").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/hermandades.html");
+				if($("#NewSection").hasClass("right")){
+					slidePageFrom(NewSection, 'right', Main);
+					$("#NewSection").load("htmls/hermandades.html");
+				}
+				else if($("#Main").hasClass("right")){
+					slidePageFrom(Main, 'right', NewSection);
+					$("#Main").load("htmls/hermandades.html");
+				}
             });
 
             $("#calendario").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/calendario.html");
+				if($("#NewSection").hasClass("right")){
+					slidePageFrom(NewSection, 'right', Main);
+					$("#NewSection").load("htmls/calendario.html");
+				}
+				else if($("#Main").hasClass("right")){
+					slidePageFrom(Main, 'right', NewSection);
+					$("#Main").load("htmls/calendario.html");
+				}
             });
 
             $("#social").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/social.html");
+				if($("#NewSection").hasClass("ight")){
+					slidePageFrom(NewSection, 'right', Main);
+					$("#NewSection").load("htmls/social.html");
+				}
+				else if($("#Main").hasClass("right")){
+					slidePageFrom(Main, 'right', NewSection);
+					$("#Main").load("htmls/social.html");
+				}                
             });
         });
     </script> 
