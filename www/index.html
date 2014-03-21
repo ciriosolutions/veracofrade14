@@ -64,17 +64,16 @@
 			
             $("#mapa").click(function(event){
 				if($("#NewSection").hasClass("right")){
-					$("#Main").hide();				
 					$("#spin").show().spin(opts);
-					/*$("#NewSection").hide();
+					$("#NewSection").empty();
 					slidePageFrom(NewSection, 'right', Main);
 					$("#NewSection").load("htmls/mapa.html");
 					$("#spin").hide();		
-					$("#NewSection").show();*/					
+					$("#NewSection").show();					
 				}
 				else if($("#Main").hasClass("right")){
 					$("#spin").show().spin(opts);	
-					$("#Main").hide();					
+					$("#Main").empty();					
 					slidePageFrom(Main, 'right', NewSection);
 					$("#Main").load("htmls/mapa.html");
 					$("#spin").hide();
@@ -84,14 +83,12 @@
 
             $("#ahcv").click(function(event){				
 				if($("#NewSection").hasClass("right")){
-					$("#Main").show();				
-					$("#spin").hide();
-					/*$("#spin").show().spin(opts);
-					$("#NewSection").hide();
+					$("#spin").show().spin(opts);
+					$("#NewSection").empty();
 					slidePageFrom(NewSection, 'right', Main);
 					$("#NewSection").load("htmls/hermandades.html");
 					$("#spin").hide();		
-					$("#NewSection").show();	*/
+					$("#NewSection").show();
 				}
 				else if($("#Main").hasClass("right")){									
 					$("#spin").show().spin(opts);
@@ -106,7 +103,7 @@
             $("#calendario").click(function(event){
 				if($("#NewSection").hasClass("right")){
 					$("#spin").show().spin(opts);
-					$("#NewSection").hide();
+					$("#NewSection").empty();
 					slidePageFrom(NewSection, 'right', Main);
 					$("#NewSection").load("htmls/calendario.html");
 					$("#spin").hide();		
@@ -114,7 +111,7 @@
 				}
 				else if($("#Main").hasClass("right")){
 					$("#spin").show().spin(opts);
-					$("#Main").hide();
+					$("#Main").empty();
 					slidePageFrom(Main, 'right', NewSection);
 					$("#Main").load("htmls/calendario.html");
 					$("#spin").hide();		
@@ -125,7 +122,7 @@
             $("#social").click(function(event){
 				if($("#NewSection").hasClass("right")){
 					$("#spin").show().spin(opts);
-					$("#NewSection").hide();
+					$("#NewSection").empty();
 					slidePageFrom(NewSection, 'right', Main);
 					$("#NewSection").load("htmls/social.html");
 					$("#spin").hide();		
@@ -133,7 +130,7 @@
 				}
 				else if($("#Main").hasClass("right")){
 					$("#spin").show().spin(opts);
-					$("#Main").hide();
+					$("#Main").empty();
 					slidePageFrom(Main, 'right', NewSection);
 					$("#Main").load("htmls/social.html");
 					$("#spin").hide();		
@@ -148,14 +145,14 @@
 <body>
 
     <header>
-        <div class="topcoat-navigation-bar full" style="position: fixed; padding-left: 10px;">
-            <div class="topcoat-navigation-bar__item">
-                <img src="img/logoVCHeader.png" style="vertical-align:middle; height:21px;margin-top: -5px;">
+        <div class="topcoat-navigation-bar full center" style="position: fixed; padding-left: 10px;">
+            <div class="topcoat-navigation-bar__item half">
+                 <h1 class="topcoat-navigation-bar__title">VeraCofrade</h1>
             </div>
         </div>
     </header>
 
-	<div id="spin" style="display:none;">
+	<div id="spin" style="display:none; z-index:1;">
 	</div>
 	
     <div id="Main" class="page center">

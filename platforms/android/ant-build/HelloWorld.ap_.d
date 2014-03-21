@@ -1,13 +1,11 @@
 /Users/miguel/developer/veracofrade14/platforms/android/ant-build/HelloWorld.ap_ \
  : /Users/miguel/developer/veracofrade14/platforms/android/res/drawable/icon.png \
-/Users/miguel/developer/veracofrade14/platforms/android/res/drawable-hdpi/icon.png \
 /Users/miguel/developer/veracofrade14/platforms/android/res/drawable-ldpi/icon.png \
 /Users/miguel/developer/veracofrade14/platforms/android/res/drawable-mdpi/icon.png \
 /Users/miguel/developer/veracofrade14/platforms/android/res/drawable-xhdpi/icon.png \
 /Users/miguel/developer/veracofrade14/platforms/android/res/values/strings.xml \
 /Users/miguel/developer/veracofrade14/platforms/android/res/xml/config.xml \
 /Users/miguel/developer/veracofrade14/platforms/android/ant-build/res/drawable/icon.png \
-/Users/miguel/developer/veracofrade14/platforms/android/ant-build/res/drawable-hdpi/icon.png \
 /Users/miguel/developer/veracofrade14/platforms/android/ant-build/res/drawable-ldpi/icon.png \
 /Users/miguel/developer/veracofrade14/platforms/android/ant-build/res/drawable-mdpi/icon.png \
 /Users/miguel/developer/veracofrade14/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
@@ -18,7 +16,9 @@
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/cordova.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/cordova_plugins.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/css \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/examples.css \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/gmaps.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/icon.png \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/iconos \
@@ -39,6 +39,7 @@
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/css/theme.css \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/css/topcoat-mobile-light.css \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/css/topcoat-mobile-light.min.css \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/contl.ttf \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/Montez-Regular.ttf \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/PoiretOne-Regular.ttf \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/sourcecodepro-regular-webfont.eot \
@@ -59,6 +60,7 @@
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/sourcesanspro-semibold.ttf \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/fonts/stylesheet.css \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls/calendario.html \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls/gmaps.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls/hermandades.html \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls/mapa.html \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/htmls/social.html \
@@ -75,11 +77,16 @@
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/iconos/js/dat.color.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/iconos/js/dat.gui.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logo.png \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/LogoVC.ai \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeader mal.png \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeader.png \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeaderBlancoPuro.png \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeaderjk.png \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/img/logoVCHeaderSolo.png \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/js/gmaps.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/js/index.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/js/jquery-2.1.0.js \
+/Users/miguel/developer/veracofrade14/platforms/android/assets/www/js/spin.min.js \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
 /Users/miguel/developer/veracofrade14/platforms/android/assets/www/plugins/org.apache.cordova.device/www \

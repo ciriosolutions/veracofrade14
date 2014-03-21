@@ -2,21 +2,57 @@
 
 <html>
 <head>
+
     <title>Page Slider</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css" />
 
     <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
     <!--<script type="text/javascript" src="phonegap.js"></script>-->
+	<script type="text/javascript" src="js/spin.min.js"></script>
 
+	<script type="text/javascript">
+		$.fn.spin = function(opts) {
+			this.each(function() {
+				var $this = $(this),
+					spinner = $this.data('spinner');
+ 
+				if (spinner) spinner.stop();
+				if (opts !== false) {
+				  opts = $.extend({color: $this.css('color')}, opts);
+				  spinner = new Spinner(opts).spin(this);
+				  $this.data('spinner', spinner);
+				}
+			});
+			return this;
+		};
+		
+		var opts = {
+			lines: 11, // The number of lines to draw
+			length: 20, // The length of each line
+			width: 10, // The line thickness
+			radius: 41, // The radius of the inner circle
+			corners: 0.8, // Corner roundness (0..1)
+			rotate: 24, // The rotation offset
+			direction: 1, // 1: clockwise, -1: counterclockwise
+			color: '#000', // #rgb or #rrggbb or array of colors
+			speed: 0.8, // Rounds per second
+			trail: 85, // Afterglow percentage
+			shadow: false, // Whether to render a shadow
+			hwaccel: false, // Whether to use hardware acceleration
+			className: 'spinner', // The CSS class to assign to the spinner
+			zIndex: 2e9, // The z-index (defaults to 2000000000)
+		};
+	</script>	
+	
     <script>
         function slidePageFrom(page, from, currentPage) {
-        // Position the page at the starting position of the animation
-        page.className = "page " + from;
-        // Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation
-        page.className ="page transition center";
+			// Position the page at the starting position of the animation
+			page.className = "page " + from;
+			// Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation
+			page.className ="page transition center";
 
-        currentPage.className = "page transition right";// + (from === "left" ? "right" : "left");
+			currentPage.className = "page transition right"; // + (from === "left" ? "right" : "left");	
         }
     </script>
 
@@ -25,26 +61,81 @@
             $("#Main").load("htmls/mapa.html");
 
             $("input[id=RBMapa]").attr('checked', true);
-
-
+			
             $("#mapa").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/mapa.html");
+				if($("#NewSection").hasClass("right")){
+					$("#spin").show().spin(opts);
+					$("#NewSection").empty();
+					slidePageFrom(NewSection, 'right', Main);
+					$("#NewSection").load("htmls/mapa.html");
+					$("#spin").hide();		
+					$("#NewSection").show();					
+				}
+				else if($("#Main").hasClass("right")){
+					$("#spin").show().spin(opts);	
+					$("#Main").empty();					
+					slidePageFrom(Main, 'right', NewSection);
+					$("#Main").load("htmls/mapa.html");
+					$("#spin").hide();
+					$("#Main").show();					
+				}
             });
 
-            $("#ahcv").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/hermandades.html");
+            $("#ahcv").click(function(event){				
+				if($("#NewSection").hasClass("right")){
+					$("#spin").show().spin(opts);
+					$("#NewSection").empty();
+					slidePageFrom(NewSection, 'right', Main);
+					$("#NewSection").load("htmls/hermandades.html");
+					$("#spin").hide();		
+					$("#NewSection").show();
+				}
+				else if($("#Main").hasClass("right")){									
+					$("#spin").show().spin(opts);
+					$("#Main").empty();					
+					slidePageFrom(Main, 'right', NewSection);					
+					$("#Main").load("htmls/hermandades.html");
+					$("#spin").hide();
+					$("#Main").show();
+				}
             });
 
             $("#calendario").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/calendario.html");
+				if($("#NewSection").hasClass("right")){
+					$("#spin").show().spin(opts);
+					$("#NewSection").empty();
+					slidePageFrom(NewSection, 'right', Main);
+					$("#NewSection").load("htmls/calendario.html");
+					$("#spin").hide();		
+					$("#NewSection").show();	
+				}
+				else if($("#Main").hasClass("right")){
+					$("#spin").show().spin(opts);
+					$("#Main").empty();
+					slidePageFrom(Main, 'right', NewSection);
+					$("#Main").load("htmls/calendario.html");
+					$("#spin").hide();		
+					$("#Main").show();	
+				}
             });
 
             $("#social").click(function(event){
-                slidePageFrom(NewSection, 'right', Main);
-                $("#NewSection").load("htmls/social.html");
+				if($("#NewSection").hasClass("right")){
+					$("#spin").show().spin(opts);
+					$("#NewSection").empty();
+					slidePageFrom(NewSection, 'right', Main);
+					$("#NewSection").load("htmls/social.html");
+					$("#spin").hide();		
+					$("#NewSection").show();	
+				}
+				else if($("#Main").hasClass("right")){
+					$("#spin").show().spin(opts);
+					$("#Main").empty();
+					slidePageFrom(Main, 'right', NewSection);
+					$("#Main").load("htmls/social.html");
+					$("#spin").hide();		
+					$("#Main").show();	
+				}                
             });
         });
     </script> 
@@ -54,17 +145,16 @@
 <body>
 
     <header>
-        <div class="topcoat-navigation-bar full" style="position: fixed;">
+        <div class="topcoat-navigation-bar full center" style="position: fixed; padding-left: 10px;">
             <div class="topcoat-navigation-bar__item half">
-                <h1 class="topcoat-navigation-bar__title">VeraCofrade</h1>
+                 <h1 class="topcoat-navigation-bar__title">VeraCofrade</h1>
             </div>
-
-            <div class="topcoat-navigation-bar__item half right">
-                <img src="img/logoVCHeader.png" style="vertical-align:middle; height:28px;margin-top: -5px;"></img>
-            <div>
         </div>
     </header>
 
+	<div id="spin" style="display:none; z-index:1;">
+	</div>
+	
     <div id="Main" class="page center">
     </div>
 
@@ -93,7 +183,7 @@
             <input type="radio" name="topcoat" id="RBCalendar">
             <button id="calendario" class="topcoat-tab-bar__button full">
                 <div class="icomatic">calendar</div>
-                <div class="icon-label">Calendario</div>
+                <div class="icon-label">Agenda</div>
             </button>
         </label>
 

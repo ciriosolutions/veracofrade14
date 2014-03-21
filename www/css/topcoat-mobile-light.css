@@ -40,8 +40,8 @@
 }
 
 .page.transition {
-    -webkit-transition-duration: .40s;
-    transition-duration: .40s;
+    -webkit-transition-duration: 1.40s;
+    transition-duration: 1.40s;
 }
 
 .button-bar {
@@ -3086,8 +3086,8 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 0;
   font-family: "Continuum";
   border-top-style:solid;
-  border-top-width:1px;
-  border-top-color:#bfbfbf;
+  border-top-width:0.1em;
+  border-top-color:#d6d6d6;
 }
 
 .button-bar__item,
@@ -3175,7 +3175,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .topcoat-tab-bar__button--large:active,
 :checked + .topcoat-tab-bar__button {
   color: #f8ae00;
-  background-color: #8D1C2E;
+  /*background-color: #8D1C2E;*/
   box-shadow: inset 0 0 1px rgba(0,0,0,0.1);
 }
 

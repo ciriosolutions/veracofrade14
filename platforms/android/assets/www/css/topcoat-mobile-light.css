@@ -40,8 +40,8 @@
 }
 
 .page.transition {
-    -webkit-transition-duration: .40s;
-    transition-duration: .40s;
+    -webkit-transition-duration: 1.40s;
+    transition-duration: 1.40s;
 }
 
 .button-bar {
@@ -3084,8 +3084,10 @@ input[type="search"]::-webkit-search-cancel-button {
   white-space: nowrap;
   margin: 0;
   padding: 0;
-  font-family: "PoiretOne-Regular";
-
+  font-family: "Continuum";
+  border-top-style:solid;
+  border-top-width:0.1em;
+  border-top-color:#d6d6d6;
 }
 
 .button-bar__item,
@@ -3156,10 +3158,10 @@ input[type="search"]::-webkit-search-cancel-button {
   /*line-height: 3rem;*/
   letter-spacing: 0.5px;
   
-  color: #fff;
+  color: #777;
   /*text-shadow: 0 1px #fff;*/
   vertical-align: top;
-  background-color: #A51F4A;
+  /*background-color: #A51F4A;*/
   /*box-shadow: inset 0 1px #fff;
   border-top: 1px solid #9daca9;*/
 }
@@ -3173,7 +3175,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .topcoat-tab-bar__button--large:active,
 :checked + .topcoat-tab-bar__button {
   color: #f8ae00;
-  background-color: #8D1C2E;
+  /*background-color: #8D1C2E;*/
   box-shadow: inset 0 0 1px rgba(0,0,0,0.1);
 }
 
@@ -3569,9 +3571,14 @@ input[type="search"]::-webkit-search-cancel-button {
   src: url("../fonts/Montez-Regular.ttf") format("truetype");
 }
 
-@font-face {
+/*@font-face {
   font-family: "PoiretOne-Regular";
   src: url("../fonts/PoiretOne-Regular.ttf") format("truetype");
+}*/
+
+@font-face {
+  font-family: "Continuum";
+  src: url("../fonts/contl.ttf") format("truetype");
 }
 
 body {
