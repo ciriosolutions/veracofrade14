@@ -12,20 +12,6 @@
 	<script type="text/javascript" src="js/spin.min.js"></script>
 
 	<script type="text/javascript">
-		$.fn.spin = function(opts) {
-			this.each(function() {
-				var $this = $(this),
-					spinner = $this.data('spinner');
- 
-				if (spinner) spinner.stop();
-				if (opts !== false) {
-				  opts = $.extend({color: $this.css('color')}, opts);
-				  spinner = new Spinner(opts).spin(this);
-				  $this.data('spinner', spinner);
-				}
-			});
-			return this;
-		};
 		
 		var opts = {
 			lines: 11, // The number of lines to draw
@@ -43,6 +29,9 @@
 			className: 'spinner', // The CSS class to assign to the spinner
 			zIndex: 2e9, // The z-index (defaults to 2000000000)
 		};
+
+		var target = document.getElementById('spin');
+		var spinner = new Spinner(opts);
 	</script>	
 	
     <script>
@@ -58,13 +47,13 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $("#Main").load("htmls/mapa.html");
+            $("#Main").load("htmls/hermandades.html");
 
             $("input[id=RBMapa]").attr('checked', true);
 			
             $("#mapa").click(function(event){
 				if($("#NewSection").hasClass("right")){
-					$("#spin").show().spin(opts);
+					spinner.spin(target);
 					$("#NewSection").empty();
 					slidePageFrom(NewSection, 'right', Main);
 					$("#NewSection").load("htmls/mapa.html");
@@ -72,7 +61,7 @@
 					$("#NewSection").show();					
 				}
 				else if($("#Main").hasClass("right")){
-					$("#spin").show().spin(opts);	
+					spinner.spin(target);	
 					$("#Main").empty();					
 					slidePageFrom(Main, 'right', NewSection);
 					$("#Main").load("htmls/mapa.html");
@@ -83,7 +72,7 @@
 
             $("#ahcv").click(function(event){				
 				if($("#NewSection").hasClass("right")){
-					$("#spin").show().spin(opts);
+					spinner.spin(target);
 					$("#NewSection").empty();
 					slidePageFrom(NewSection, 'right', Main);
 					$("#NewSection").load("htmls/hermandades.html");
@@ -91,7 +80,7 @@
 					$("#NewSection").show();
 				}
 				else if($("#Main").hasClass("right")){									
-					$("#spin").show().spin(opts);
+					spinner.spin(target);
 					$("#Main").empty();					
 					slidePageFrom(Main, 'right', NewSection);					
 					$("#Main").load("htmls/hermandades.html");
@@ -102,7 +91,7 @@
 
             $("#calendario").click(function(event){
 				if($("#NewSection").hasClass("right")){
-					$("#spin").show().spin(opts);
+					spinner.spin(target);
 					$("#NewSection").empty();
 					slidePageFrom(NewSection, 'right', Main);
 					$("#NewSection").load("htmls/calendario.html");
@@ -110,7 +99,7 @@
 					$("#NewSection").show();	
 				}
 				else if($("#Main").hasClass("right")){
-					$("#spin").show().spin(opts);
+					spinner.spin(target);
 					$("#Main").empty();
 					slidePageFrom(Main, 'right', NewSection);
 					$("#Main").load("htmls/calendario.html");
@@ -121,7 +110,7 @@
 
             $("#social").click(function(event){
 				if($("#NewSection").hasClass("right")){
-					$("#spin").show().spin(opts);
+					spinner.spin(target);
 					$("#NewSection").empty();
 					slidePageFrom(NewSection, 'right', Main);
 					$("#NewSection").load("htmls/social.html");
@@ -129,7 +118,7 @@
 					$("#NewSection").show();	
 				}
 				else if($("#Main").hasClass("right")){
-					$("#spin").show().spin(opts);
+					spinner.spin(target);
 					$("#Main").empty();
 					slidePageFrom(Main, 'right', NewSection);
 					$("#Main").load("htmls/social.html");
