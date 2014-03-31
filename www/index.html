@@ -3,13 +3,19 @@
 <html>
 <head>
 
-    <title>Page Slider</title>
+    <title>VeraCofrade</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css" />
 
     <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
-    <!--<script type="text/javascript" src="phonegap.js"></script>-->
+    <script type="text/javascript" src="js/phonegap.js"></script>
 	<script type="text/javascript" src="js/spin.min.js"></script>
+
+	<!--<script type="text/javascript">
+		$(function() {
+    		FastClick.attach(document.body);
+		});
+	</script>-->
 
 	<script type="text/javascript">
 		
@@ -36,18 +42,24 @@
 	
     <script>
         function slidePageFrom(page, from, currentPage) {
+
+        	//page.zindex= 9999;
 			// Position the page at the starting position of the animation
 			page.className = "page " + from;
 			// Position the new page and the current page at the ending position of their animation with a transition class indicating the duration of the animation
 			page.className ="page transition center";
 
 			currentPage.className = "page transition right"; // + (from === "left" ? "right" : "left");	
+
+			//currentPage.zindex=1;
         }
     </script>
 
     <script type="text/javascript">
+
         $(document).ready(function() {
-            $("#Main").load("htmls/hermandades.html");
+
+            $("#Main").load("htmls/mapa.html");
 
             $("input[id=RBMapa]").attr('checked', true);
 			
@@ -55,6 +67,7 @@
 				if($("#NewSection").hasClass("right")){
 					spinner.spin(target);
 					$("#NewSection").empty();
+					
 					slidePageFrom(NewSection, 'right', Main);
 					$("#NewSection").load("htmls/mapa.html");
 					$("#spin").hide();		
@@ -134,7 +147,7 @@
 <body>
 
     <header>
-        <div class="topcoat-navigation-bar full center" style="position: fixed; padding-left: 10px;">
+        <div class="topcoat-navigation-bar full center">
             <div class="topcoat-navigation-bar__item half">
                  <h1 class="topcoat-navigation-bar__title">VeraCofrade</h1>
             </div>

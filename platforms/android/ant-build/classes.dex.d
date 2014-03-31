@@ -25,4 +25,10 @@
 /Users/miguel/developer/veracofrade14/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$5$1.class \
 /Users/miguel/developer/veracofrade14/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$5.class \
 /Users/miguel/developer/veracofrade14/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification.class \
+/Users/miguel/developer/veracofrade14/platforms/android/ant-build/classes/org/apache/cordova/geolocation/CordovaLocationListener$LocationTimeoutTask.class \
+/Users/miguel/developer/veracofrade14/platforms/android/ant-build/classes/org/apache/cordova/geolocation/CordovaLocationListener.class \
+/Users/miguel/developer/veracofrade14/platforms/android/ant-build/classes/org/apache/cordova/geolocation/GeoBroker.class \
+/Users/miguel/developer/veracofrade14/platforms/android/ant-build/classes/org/apache/cordova/geolocation/GPSListener.class \
+/Users/miguel/developer/veracofrade14/platforms/android/ant-build/classes/org/apache/cordova/geolocation/NetworkListener.class \
+/Users/miguel/developer/veracofrade14/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
 /Users/miguel/developer/veracofrade14/platforms/android/ant-build/dexedLibs/classes-cf918061712df9cd5c0f55e9ad8f5026.jar \

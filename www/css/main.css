@@ -2,10 +2,11 @@ html,body{
   margin:0;
   padding:0;
   height: 100%;
+  width: 100%;
 }
 body {
   font-family: source-sans-pro, sans-serif;
-  position: relative;
+  position: absolute;
   -webkit-font-smoothing: antialiased;
 }
 body.light {
@@ -166,10 +167,12 @@ pre {
 }
 /* Content */
 #content {
-  width: 100%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 /* Code */
 #content section.code {
